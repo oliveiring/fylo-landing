@@ -1,0 +1,299 @@
+@use '../scss/colores' as c;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  font-weight:400;
+}
+
+ul{list-style: none;}
+a{text-decoration: none;}
+img{width:100%;}
+
+h1,
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight:700;
+}
+
+@mixin row {
+  margin: 0 auto;
+  max-width:1250px;
+}
+
+@mixin  button {
+  background:c.color(--lighy-gravish-blue);
+  padding-left:3rem;
+  border:0;
+  color: #fff;
+  padding:0 2.5rem;
+  border-radius: 3px;
+  background:c.color(--moderate-cyan);
+  font-size: 1.1rem;
+  cursor:pointer;
+}
+
+@mixin flex-columns{
+  display: flex;
+  justify-content:space-between;
+  //align-items: center;
+}
+
+#navbar{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-top:3rem;
+  ul{
+    display:flex;
+  }
+  li{
+    padding:0 2rem;
+  }
+  a{
+    font-size:1.2rem;
+    color:c.color(--bright-blue);
+  }
+}
+
+#hero{
+  @include row();
+  font-size:1.2rem;
+  .content{
+    @include flex-columns();
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+  .box{
+    &-1{
+      h1{
+        font-size:220%;
+      }
+      p{
+        margin:1.5rem 0;
+        width:100%;
+      }
+      div{
+        display: flex;
+        input[type=email]{
+          width: 50%; 
+          padding:0.7rem;
+        }
+        input[type=button]{
+          @include button();
+          margin-left:1rem;
+        }
+      }
+    }
+  }
+}
+
+main{
+  #productive{
+    background:url(/images/bg-curve-desktop.svg);
+    height:100%;
+    background-position: center;
+    background-size:310% 100%;
+    background-repeat: no-repeat;
+    margin-top: 6rem;
+
+    .content{
+      @include row();
+      @include flex-columns();
+      padding:15rem 1rem;
+      .box{
+        &-1{
+          h2{
+            font-size: 2rem;
+          }
+          p{
+            padding:1rem 0;
+          }
+          a{
+            color: c.color(--moderate-cyan);
+            border-bottom: 1px solid c.color(--moderate-cyan);
+            img{
+              width:1rem;
+            }
+            
+          }
+         .testimonial{
+          padding:2rem 1.5rem;
+          border: 1px solid rgb(233, 224, 224);
+          width:55%;
+          margin:2rem 0;
+          border-radius:5px;
+          box-shadow:1px 1px 1px 1px  rgb(233, 224, 224);
+          .user{
+            display: flex;
+            align-items: center;
+            padding:0.8rem 0;
+            h4,h5{font-size: 0.7rem;}
+            h5{
+              color:rgb(202, 199, 199);
+            }
+            img{
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin-right:1rem;
+            }
+          }
+         }
+        }
+        &-2{
+          img{width: 500px;}
+        }
+      }
+    }
+  }
+
+
+  #access{
+    background: c.color(--desaturated-blue);
+    padding:4rem 0;
+    .content{
+      @include row;
+      display: flex;
+      justify-content:space-between;
+      align-items:center;
+      .box{
+        &-1{
+          p{
+            width: 40%;
+            color:c.color(--lighy-gravish-blue);
+          }
+          h2{
+            font-size: 2rem;
+            color:#fff;
+          }
+        }
+        &-2{
+          input[type=email]{
+            width:100%;
+            padding: 0.8rem;
+          }
+          
+        }
+      }
+    }
+  }
+
+}
+
+@media(max-width:789px){
+  body{font-size: 13px;}
+  @mixin flex-columns {flex-direction:column-reverse;}
+
+ #hero{
+  .content{
+    @include flex-columns();
+    text-align: center;
+  }
+  .box{
+    &-1{
+      padding-top:2rem;
+      h1{
+        font-size:1.3rem;
+      }
+      p{
+        width:100%;
+      }
+      div{
+        flex-direction:column;
+        align-items: center;
+        input[type=button],
+        input[type=email]{
+          width:100%;
+          padding:0.7rem 0;
+          margin:0.6rem 0;
+        }
+      }
+    }
+  }
+}
+
+  #navbar{
+    flex-direction: column;
+    padding-top:2rem;
+    li{
+      padding:0 8px;
+    }
+    a{
+      font-size:1rem;
+    }
+  }
+
+    
+  main{
+    #productive{
+      background:url(/images/bg-curve-desktop.svg);
+      background-size:510% 100%;
+      margin-top: 5rem;
+      background-position: center;
+      .content{
+        @include flex-columns();
+        padding:10rem 1rem;
+        .box{
+          &-1{
+            h2{
+              font-size: 1.5rem;
+            }
+          .testimonial{
+                width:100%;
+          }
+          }
+          &-2{
+            img{width: 100%;}
+          }
+        }
+      }
+    }
+
+    #access{
+      background: c.color(--desaturated-blue);
+      padding:4rem 0;
+      .content{
+        @include row;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .box{
+          &-1{
+            p{
+              width:100%;
+              color:c.color(--lighy-gravish-blue);
+            }
+            h2{
+              font-size: 2rem;
+              color:#fff;
+            }
+          }
+          &-2{
+            button[type=submit],
+            input[type=email]{
+              width:100%;
+              padding: 0.6rem;
+            }
+            
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+  }
+  
+}
+

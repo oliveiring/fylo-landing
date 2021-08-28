@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar li {
+  padding: 0 2rem;
+}
+#navbar a {
+  font-size: 1.2rem;
+  color: #070439;
+}
+
+#hero {
+  margin: 0 auto;
+  max-width: 1250px;
+  font-size: 1.2rem;
+}
+#hero .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+#hero .box-1 h1 {
+  font-size: 220%;
+}
+#hero .box-1 p {
+  margin: 1.5rem 0;
+  width: 100%;
+}
+#hero .box-1 div {
+  display: flex;
+}
+#hero .box-1 div input[type=email] {
+  width: 50%;
+  padding: 0.7rem;
+}
+#hero .box-1 div input[type=button] {
+  background: #f6f6fe;
+  padding-left: 3rem;
+  border: 0;
+  color: #fff;
+  padding: 0 2.5rem;
+  border-radius: 3px;
+  background: #3c9f8f;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+main #productive {
+  background: url(/images/bg-curve-desktop.svg);
+  height: 100%;
+  background-position: center;
+  background-size: 310% 100%;
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+}
+main #productive .content {
+  margin: 0 auto;
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15rem 1rem;
+}
+main #productive .content .box-1 h2 {
+  font-size: 2rem;
+}
+main #productive .content .box-1 p {
+  padding: 1rem 0;
+}
+main #productive .content .box-1 a {
+  color: #3c9f8f;
+  border-bottom: 1px solid #3c9f8f;
+}
+main #productive .content .box-1 a img {
+  width: 1rem;
+}
+main #productive .content .box-1 .testimonial {
+  padding: 2rem 1.5rem;
+  border: 1px solid #e9e0e0;
+  width: 55%;
+  margin: 2rem 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #e9e0e0;
+}
+main #productive .content .box-1 .testimonial .user {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+}
+main #productive .content .box-1 .testimonial .user h4, main #productive .content .box-1 .testimonial .user h5 {
+  font-size: 0.7rem;
+}
+main #productive .content .box-1 .testimonial .user h5 {
+  color: #cac7c7;
+}
+main #productive .content .box-1 .testimonial .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+main #productive .content .box-2 img {
+  width: 500px;
+}
+main #access {
+  background: #585989;
+  padding: 4rem 0;
+}
+main #access .content {
+  margin: 0 auto;
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #access .content .box-1 p {
+  width: 40%;
+  color: #f6f6fe;
+}
+main #access .content .box-1 h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+main #access .content .box-2 input[type=email] {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+@media (max-width: 789px) {
+  body {
+    font-size: 13px;
+  }
+
+  #hero .content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #hero .box-1 {
+    padding-top: 2rem;
+  }
+  #hero .box-1 h1 {
+    font-size: 1.3rem;
+  }
+  #hero .box-1 p {
+    width: 100%;
+  }
+  #hero .box-1 div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero .box-1 div input[type=button],
+#hero .box-1 div input[type=email] {
+    width: 100%;
+    padding: 0.7rem 0;
+    margin: 0.6rem 0;
+  }
+
+  #navbar {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  #navbar li {
+    padding: 0 8px;
+  }
+  #navbar a {
+    font-size: 1rem;
+  }
+
+  main #productive {
+    background: url(/images/bg-curve-desktop.svg);
+    background-size: 510% 100%;
+    margin-top: 5rem;
+    background-position: center;
+  }
+  main #productive .content {
+    flex-direction: column-reverse;
+    padding: 10rem 1rem;
+  }
+  main #productive .content .box-1 h2 {
+    font-size: 1.5rem;
+  }
+  main #productive .content .box-1 .testimonial {
+    width: 100%;
+  }
+  main #productive .content .box-2 img {
+    width: 100%;
+  }
+  main #access {
+    background: #585989;
+    padding: 4rem 0;
+  }
+  main #access .content {
+    margin: 0 auto;
+    max-width: 1250px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  main #access .content .box-1 p {
+    width: 100%;
+    color: #f6f6fe;
+  }
+  main #access .content .box-1 h2 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  main #access .content .box-2 button[type=submit],
+main #access .content .box-2 input[type=email] {
+    width: 100%;
+    padding: 0.6rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
