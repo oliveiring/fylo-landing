@@ -1,3 +1,6 @@
+/*----------------------*/
+/*Setting up*/
+/*----------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 * {
   padding: 0;
@@ -29,6 +32,12 @@ h2 {
   font-weight: 700;
 }
 
+/*----------------------*/
+/*Ultilities*/
+/*----------------------*/
+/*----------------------*/
+/*Navegation*/
+/*----------------------*/
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -46,6 +55,9 @@ h2 {
   color: #070439;
 }
 
+/*----------------------*/
+/*Hero*/
+/*----------------------*/
 #hero {
   margin: 0 auto;
   max-width: 1250px;
@@ -72,23 +84,29 @@ h2 {
   padding: 0.7rem;
 }
 #hero .box-1 div input[type=button] {
-  background: #f6f6fe;
+  background-color: #3065f8;
   padding-left: 3rem;
   border: 0;
   color: #fff;
   padding: 0 2.5rem;
   border-radius: 3px;
-  background: #3c9f8f;
   font-size: 1.1rem;
   cursor: pointer;
   margin-left: 1rem;
 }
 
+/*----------------------*/
+/*Productive & access*/
+/*----------------------*/
+main {
+  /*Productive*/
+  /*Access*/
+}
 main #productive {
   background: url(/images/bg-curve-desktop.svg);
   height: 100%;
   background-position: center;
-  background-size: 310% 100%;
+  background-size: 350% 100%;
   background-repeat: no-repeat;
   margin-top: 6rem;
 }
@@ -148,12 +166,12 @@ main #access .content {
   margin: 0 auto;
   max-width: 1250px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 main #access .content .box-1 p {
-  width: 40%;
-  color: #f6f6fe;
+  width: 70%;
+  color: #bfbfbf;
+  margin: 2rem 0;
 }
 main #access .content .box-1 h2 {
   font-size: 2rem;
@@ -161,14 +179,54 @@ main #access .content .box-1 h2 {
 }
 main #access .content .box-2 input[type=email] {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.7rem 15rem 0.7rem 0.2rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  border: 0;
+}
+main #access .content .box-2 input[type=button],
+main #access .content .box-2 a {
+  background-color: #3065f8;
+  padding-left: 3rem;
+  border: 0;
+  color: #fff;
+  padding: 0 2.5rem;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.7rem;
 }
 
+#footer {
+  background: #070439;
+  padding: 6rem 0;
+  color: #bfbfbf;
+}
+#footer .content {
+  margin: 0 auto;
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .content ul li {
+  padding: 0.8rem 0;
+}
+#footer .content ul li a {
+  color: #bfbfbf;
+}
+#footer .content .box:last-child {
+  display: flex;
+}
+
+/*----------------------*/
+/*Media Queries*/
+/*----------------------*/
 @media (max-width: 789px) {
   body {
     font-size: 13px;
   }
 
+  /*hero*/
   #hero .content {
     flex-direction: column-reverse;
     text-align: center;
@@ -193,6 +251,7 @@ main #access .content .box-2 input[type=email] {
     margin: 0.6rem 0;
   }
 
+  /*navegation*/
   #navbar {
     flex-direction: column;
     padding-top: 2rem;
@@ -204,6 +263,9 @@ main #access .content .box-2 input[type=email] {
     font-size: 1rem;
   }
 
+  main {
+    /*access*/
+  }
   main #productive {
     background: url(/images/bg-curve-desktop.svg);
     background-size: 510% 100%;
@@ -224,28 +286,35 @@ main #access .content .box-2 input[type=email] {
     width: 100%;
   }
   main #access {
+    padding: 10px;
     background: #585989;
-    padding: 4rem 0;
   }
   main #access .content {
     margin: 0 auto;
     max-width: 1250px;
     flex-direction: column;
+  }
+  main #access .content .box {
     text-align: center;
-    align-items: center;
   }
   main #access .content .box-1 p {
     width: 100%;
-    color: #f6f6fe;
+    text-align: center;
   }
   main #access .content .box-1 h2 {
     font-size: 2rem;
-    color: #fff;
   }
-  main #access .content .box-2 button[type=submit],
+  main #access .content .box-2 input[type=button],
 main #access .content .box-2 input[type=email] {
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.7rem 5rem 0.7rem 0.2rem;
+  }
+
+  #footer {
+    padding: 6rem 0;
+  }
+  #footer .content {
+    flex-direction: column;
   }
 }
 
