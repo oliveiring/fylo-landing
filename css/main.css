@@ -42,7 +42,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 #navbar ul {
   display: flex;
@@ -92,7 +92,13 @@ h2 {
   border-radius: 3px;
   font-size: 1.1rem;
   cursor: pointer;
+  opacity: 10;
+  transition: all 1s;
   margin-left: 1rem;
+}
+#hero .box-1 form button[type=submit]:hover {
+  opacity: 0.8;
+  background: #3065f8;
 }
 
 /*----------------------*/
@@ -137,6 +143,9 @@ main #productive .content .box-1 .testimonial {
   margin: 2rem 0;
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px #e9e0e0;
+}
+main #productive .content .box-1 .testimonial .quote {
+  width: 15px;
 }
 main #productive .content .box-1 .testimonial .user {
   display: flex;
@@ -194,7 +203,14 @@ main #access .content .box-2 a {
   border-radius: 3px;
   font-size: 1.1rem;
   cursor: pointer;
+  opacity: 10;
+  transition: all 1s;
   padding: 0.7rem;
+}
+main #access .content .box-2 input[type=button]:hover,
+main #access .content .box-2 a:hover {
+  opacity: 0.8;
+  background: #3065f8;
 }
 
 #footer {
