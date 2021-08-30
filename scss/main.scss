@@ -34,7 +34,7 @@ h2{
 }
 
 @mixin button {
-  background-color: #3065f8;
+  background-color:c.color(--button-main);
   padding-left:3rem;
   border:0;
   color: #fff;
@@ -212,20 +212,57 @@ main{
 }
 #footer{
   background:c.color(--very-dark-blue);
-  padding:6rem 0;
+  padding:5rem 0;
   color:c.color(--light-gray);
+  .logo{
+    width:330px;
+    padding:0 3rem;
+    color:#fff;
+  }
   .content{
     @include row();
     @include flex-itemns();
     ul li {
-      padding:0.8rem 0;
+        padding-bottom:1rem;
       a{
         color:c.color(--light-gray);
+        
       }
     }
-    .box:last-child{
-      display: flex;
-      
+    .box{
+      &-4 ul{
+        display:flex;
+        padding-right: 1rem;
+        li{
+          padding:0 1rem;
+          a i{
+            height:40px;
+            width:40px;
+            border: 1px solid #fff;
+            line-height:1.6em;
+            border-radius:50%;
+            text-align: center;
+            font-size:1.4rem;
+            transition: all 1s;
+          }
+          a .fa-facebook-f:hover{border:1px solid c.color(--facebook-icon)}
+          a .fa-twitter:hover{border:1px solid c.color(--twitter-icon);}
+          a .fa-instagram:hover{border:1px solid c.color(--instagram-icon);}
+        }
+      }
+      &-2,
+      &-3{
+        li a:hover{
+          color:c.color(--button-main);
+        }
+      }
+      &-1 ul{
+          display: flex;
+          flex-direction: column;
+        i{
+          padding-right:1rem;
+        }
+      }
     }
   }
 }
@@ -233,14 +270,14 @@ main{
    /*Media Queries*/
 /*----------------------*/
 @media(max-width:789px){
-
-  body{font-size: 13px;}
-
+  //Setting  
+  body{font-size: 15px;}
+  //Ultilities
   @mixin flex-columns {flex-direction:column-reverse;}
   @mixin flex-itemns {
     flex-direction: column;
   }
- /*hero*/
+ /*Hero*/
  #hero{
   .content{
     @include flex-columns();
@@ -268,7 +305,7 @@ main{
     }
   }
 }
-  /*navegation*/
+  /*Navegation*/
   #navbar{
     flex-direction: column;
     padding-top:2rem;
@@ -280,9 +317,10 @@ main{
     }
   }
   main{
+    //Productive
     #productive{
       background:url(/images/bg-curve-desktop.svg);
-      background-size:510% 100%;
+      background-size:540% 100%;
       margin-top: 5rem;
       background-position: center;
       .content{
@@ -303,9 +341,9 @@ main{
         }
       }
     }
-    /*access*/
+    /*Access*/
     #access{
-      padding:10px;
+      padding:2rem 0.6rem;
       background: c.color(--desaturated-blue);
       .content{
         @include row;
@@ -317,7 +355,7 @@ main{
               text-align: center;
             }
             h2{
-              font-size: 2rem;
+              font-size:2rem;
             }
           }
           text-align: center;
@@ -336,15 +374,29 @@ main{
     }
 
   }
-
+  //Footer
   #footer{
-    padding:6rem 0;
+    .logo{
+      width:100%;
+      padding:0 10px;
+    }
     .content{
       @include flex-itemns();
+      padding:10px;
+     
+      .box{
+        &-4 ul{
+         display: flex;
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+        }
+        &-3{
+          padding:1rem 0;
+        }
+      }
     }
   }
-
-
 }
 
 

@@ -4,7 +4,17 @@ $colors:(
   --bright-blue:hsl(243, 87%, 12%),
   --moderate-cyan:hsl(170, 45%, 43%),
   --lighy-gravish-blue:hsl(240, 75%, 98%),
-  --light-gray:hsl(0, 0%, 75%)
+  --light-gray:hsl(0, 0%, 75%),
+
+  //main button
+  --button-main:#3065f8,
+
+  //social media
+
+  --facebook-icon:#1877F2,
+  --twitter-icon:#1DA1F2,
+  --instagram-icon:#E4405F
+
 );
 
 @function color($colorr){

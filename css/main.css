@@ -199,8 +199,13 @@ main #access .content .box-2 a {
 
 #footer {
   background: #070439;
-  padding: 6rem 0;
+  padding: 5rem 0;
   color: #bfbfbf;
+}
+#footer .logo {
+  width: 330px;
+  padding: 0 3rem;
+  color: #fff;
 }
 #footer .content {
   margin: 0 auto;
@@ -209,13 +214,46 @@ main #access .content .box-2 a {
   justify-content: space-between;
 }
 #footer .content ul li {
-  padding: 0.8rem 0;
+  padding-bottom: 1rem;
 }
 #footer .content ul li a {
   color: #bfbfbf;
 }
-#footer .content .box:last-child {
+#footer .content .box-4 ul {
   display: flex;
+  padding-right: 1rem;
+}
+#footer .content .box-4 ul li {
+  padding: 0 1rem;
+}
+#footer .content .box-4 ul li a i {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #fff;
+  line-height: 1.6em;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: all 1s;
+}
+#footer .content .box-4 ul li a .fa-facebook-f:hover {
+  border: 1px solid #1877F2;
+}
+#footer .content .box-4 ul li a .fa-twitter:hover {
+  border: 1px solid #1DA1F2;
+}
+#footer .content .box-4 ul li a .fa-instagram:hover {
+  border: 1px solid #E4405F;
+}
+#footer .content .box-2 li a:hover, #footer .content .box-3 li a:hover {
+  color: #3065f8;
+}
+#footer .content .box-1 ul {
+  display: flex;
+  flex-direction: column;
+}
+#footer .content .box-1 ul i {
+  padding-right: 1rem;
 }
 
 /*----------------------*/
@@ -223,10 +261,10 @@ main #access .content .box-2 a {
 /*----------------------*/
 @media (max-width: 789px) {
   body {
-    font-size: 13px;
+    font-size: 15px;
   }
 
-  /*hero*/
+  /*Hero*/
   #hero .content {
     flex-direction: column-reverse;
     text-align: center;
@@ -251,7 +289,7 @@ main #access .content .box-2 a {
     margin: 0.6rem 0;
   }
 
-  /*navegation*/
+  /*Navegation*/
   #navbar {
     flex-direction: column;
     padding-top: 2rem;
@@ -264,11 +302,11 @@ main #access .content .box-2 a {
   }
 
   main {
-    /*access*/
+    /*Access*/
   }
   main #productive {
     background: url(/images/bg-curve-desktop.svg);
-    background-size: 510% 100%;
+    background-size: 540% 100%;
     margin-top: 5rem;
     background-position: center;
   }
@@ -286,7 +324,7 @@ main #access .content .box-2 a {
     width: 100%;
   }
   main #access {
-    padding: 10px;
+    padding: 2rem 0.6rem;
     background: #585989;
   }
   main #access .content {
@@ -310,11 +348,22 @@ main #access .content .box-2 input[type=email] {
     padding: 0.7rem 5rem 0.7rem 0.2rem;
   }
 
-  #footer {
-    padding: 6rem 0;
+  #footer .logo {
+    width: 100%;
+    padding: 0 10px;
   }
   #footer .content {
     flex-direction: column;
+    padding: 10px;
+  }
+  #footer .content .box-4 ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #footer .content .box-3 {
+    padding: 1rem 0;
   }
 }
 
