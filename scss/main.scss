@@ -91,13 +91,13 @@ h2{
         margin:1.5rem 0;
         width:100%;
       }
-      div{
+      form{
         display: flex;
         input[type=email]{
           width: 50%; 
           padding:0.7rem;
         }
-        input[type=button]{
+        button[type=submit]{
           @include button();
           margin-left:1rem;
         }
@@ -213,7 +213,6 @@ main{
 #footer{
   background:c.color(--very-dark-blue);
   padding:5rem 0;
-  color:c.color(--light-gray);
   .logo{
     width:330px;
     padding:0 3rem;
@@ -225,7 +224,7 @@ main{
     ul li {
         padding-bottom:1rem;
       a{
-        color:c.color(--light-gray);
+        color:#fff;
         
       }
     }
@@ -292,10 +291,10 @@ main{
       p{
         width:100%;
       }
-      div{
+      form{
         flex-direction:column;
         align-items: center;
-        input[type=button],
+        button[type=submit],
         input[type=email]{
           width:100%;
           padding:0.7rem 0;

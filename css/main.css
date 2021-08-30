@@ -76,14 +76,14 @@ h2 {
   margin: 1.5rem 0;
   width: 100%;
 }
-#hero .box-1 div {
+#hero .box-1 form {
   display: flex;
 }
-#hero .box-1 div input[type=email] {
+#hero .box-1 form input[type=email] {
   width: 50%;
   padding: 0.7rem;
 }
-#hero .box-1 div input[type=button] {
+#hero .box-1 form button[type=submit] {
   background-color: #3065f8;
   padding-left: 3rem;
   border: 0;
@@ -200,7 +200,6 @@ main #access .content .box-2 a {
 #footer {
   background: #070439;
   padding: 5rem 0;
-  color: #bfbfbf;
 }
 #footer .logo {
   width: 330px;
@@ -217,7 +216,7 @@ main #access .content .box-2 a {
   padding-bottom: 1rem;
 }
 #footer .content ul li a {
-  color: #bfbfbf;
+  color: #fff;
 }
 #footer .content .box-4 ul {
   display: flex;
@@ -278,12 +277,12 @@ main #access .content .box-2 a {
   #hero .box-1 p {
     width: 100%;
   }
-  #hero .box-1 div {
+  #hero .box-1 form {
     flex-direction: column;
     align-items: center;
   }
-  #hero .box-1 div input[type=button],
-#hero .box-1 div input[type=email] {
+  #hero .box-1 form button[type=submit],
+#hero .box-1 form input[type=email] {
     width: 100%;
     padding: 0.7rem 0;
     margin: 0.6rem 0;
