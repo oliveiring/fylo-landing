@@ -225,8 +225,9 @@ main{
   .logo{
     width:330px;
     padding:0 3rem;
-    color:#fff;
+    fill:#fff;
   }
+
   .content{
     @include row();
     @include flex-itemns();

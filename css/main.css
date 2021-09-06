@@ -220,7 +220,7 @@ main #access .content .box-2 a:hover {
 #footer .logo {
   width: 330px;
   padding: 0 3rem;
-  color: #fff;
+  fill: #fff;
 }
 #footer .content {
   margin: 0 auto;
