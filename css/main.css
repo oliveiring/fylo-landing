@@ -381,5 +381,10 @@ main #access .content .box-2 input[type=email] {
     padding: 1rem 0;
   }
 }
+@media (max-width: 1024px) {
+  #access .content {
+    padding: 10px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
