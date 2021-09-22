@@ -218,7 +218,7 @@ main #access .content .box-2 a:hover {
   padding: 5rem 0;
 }
 #footer .logo {
-  width: 330px;
+  width: 250px;
   padding: 0 3rem;
   fill: #fff;
 }
@@ -363,10 +363,6 @@ main #access .content .box-2 input[type=email] {
     padding: 0.7rem 5rem 0.7rem 0.2rem;
   }
 
-  #footer .logo {
-    width: 100%;
-    padding: 0 10px;
-  }
   #footer .content {
     flex-direction: column;
     padding: 10px;
@@ -382,8 +378,14 @@ main #access .content .box-2 input[type=email] {
   }
 }
 @media (max-width: 1024px) {
-  #access .content {
+  #navbar,
+.content {
     padding: 10px;
+  }
+
+  #footer .logo {
+    width: 150px;
+    padding: 0 10px;
   }
 }
 

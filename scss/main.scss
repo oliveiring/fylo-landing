@@ -223,7 +223,7 @@ main{
   background:c.color(--very-dark-blue);
   padding:5rem 0;
   .logo{
-    width:330px;
+    width:250px;
     padding:0 3rem;
     fill:#fff;
   }
@@ -385,10 +385,6 @@ main{
   }
   //Footer
   #footer{
-    .logo{
-      width:100%;
-      padding:0 10px;
-    }
     .content{
       @include flex-itemns();
       padding:10px;
@@ -409,11 +405,15 @@ main{
 }
 
 @media(max-width:1024px){
-  #access{
-    .content{
-      padding:10px;
+    #navbar,
+    .content{padding:10px;}
+    
+    #footer{
+      .logo{
+        width:150px;
+        padding:0 10px;
+      }
     }
-  }
 }
 
 
