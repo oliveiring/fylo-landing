@@ -43,7 +43,7 @@ h2{
   font-size: 1.1rem;
   cursor:pointer;
   opacity:10;
-  transition:all 1s;
+  transition:200mc;
   &:hover{
     opacity:0.8;
     background: c.color(--button-main);
@@ -252,7 +252,7 @@ main{
             border-radius:50%;
             text-align: center;
             font-size:1.4rem;
-            transition: all 1s;
+            transition: 200ms;
           }
           a .fa-facebook-f:hover{border:1px solid c.color(--facebook-icon)}
           a .fa-twitter:hover{border:1px solid c.color(--twitter-icon);}
