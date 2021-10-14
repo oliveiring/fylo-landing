@@ -100,6 +100,9 @@ h2 {
   opacity: 0.8;
   background: #3065f8;
 }
+#hero .box-2 img {
+  width: 600px;
+}
 
 /*----------------------*/
 /*Productive & access*/
@@ -128,6 +131,7 @@ main #productive .content .box-1 h2 {
 }
 main #productive .content .box-1 p {
   padding: 1rem 0;
+  width: 90%;
 }
 main #productive .content .box-1 a {
   color: #3c9f8f;
@@ -165,7 +169,7 @@ main #productive .content .box-1 .testimonial .user img {
   margin-right: 1rem;
 }
 main #productive .content .box-2 img {
-  width: 500px;
+  width: 600px;
 }
 main #access {
   background: #585989;
@@ -302,6 +306,9 @@ main #access .content .box-2 a:hover {
     padding: 0.7rem 0;
     margin: 0.6rem 0;
   }
+  #hero .box-2 img {
+    width: 100%;
+  }
 
   /*Navegation*/
   #navbar {
@@ -330,6 +337,9 @@ main #access .content .box-2 a:hover {
   }
   main #productive .content .box-1 h2 {
     font-size: 1.5rem;
+  }
+  main #productive .content .box-1 P {
+    width: 100%;
   }
   main #productive .content .box-1 .testimonial {
     width: 100%;
@@ -384,7 +394,6 @@ main #access .content .box-2 input[type=email] {
 
   #footer .logo {
     width: 150px;
-    padding: 0 10px;
   }
 }
 
