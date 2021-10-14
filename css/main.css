@@ -230,7 +230,7 @@ main #access .content .box-2 a:hover {
   color: #fff;
 }
 #footer .content .logo {
-  width: 140px;
+  width: 180px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(93%) saturate(2%) hue-rotate(65deg) brightness(111%) contrast(101%);
 }
 #footer .content .box-4 ul {
