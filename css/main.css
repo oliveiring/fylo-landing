@@ -217,11 +217,6 @@ main #access .content .box-2 a:hover {
   background: #070439;
   padding: 5rem 0;
 }
-#footer .logo {
-  width: 250px;
-  padding: 0 3rem;
-  fill: #fff;
-}
 #footer .content {
   margin: 0 auto;
   max-width: 1250px;
@@ -233,6 +228,10 @@ main #access .content .box-2 a:hover {
 }
 #footer .content ul li a {
   color: #fff;
+}
+#footer .content .logo {
+  width: 140px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(93%) saturate(2%) hue-rotate(65deg) brightness(111%) contrast(101%);
 }
 #footer .content .box-4 ul {
   display: flex;

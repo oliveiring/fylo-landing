@@ -222,12 +222,6 @@ main{
 #footer{
   background:c.color(--very-dark-blue);
   padding:5rem 0;
-  .logo{
-    width:250px;
-    padding:0 3rem;
-    fill:#fff;
-  }
-
   .content{
     @include row();
     @include flex-itemns();
@@ -237,6 +231,11 @@ main{
         color:#fff;
         
       }
+    }
+    .logo{
+      width: 140px;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(93%) saturate(2%)
+      hue-rotate(65deg) brightness(111%) contrast(101%);
     }
     .box{
       &-4 ul{
