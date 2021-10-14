@@ -286,9 +286,7 @@ main{
   body{font-size: 15px;}
   //Ultilities
   @mixin flex-columns {flex-direction:column-reverse;}
-  @mixin flex-itemns {
-    flex-direction: column;
-  }
+  @mixin flex-itemns {flex-direction: column;}
  /*Hero*/
  #hero{
   .content{
@@ -411,16 +409,9 @@ main{
   }
 }
 
-@media(max-width:1024px){
+@media(max-width:1200px){
     #navbar,
     .content{padding:10px;}
-    
-    #footer{
-      .logo{
-        width:150px;
-        //padding:0 10px;
-      }
-    }
 }
 
 
