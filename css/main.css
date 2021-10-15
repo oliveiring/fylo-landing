@@ -198,6 +198,7 @@ main #access .content .box-2 input[type=email] {
   border-radius: 3px;
   border: 0;
 }
+main #access .content .box-2 button[type=submit],
 main #access .content .box-2 input[type=button],
 main #access .content .box-2 a {
   background-color: #3065f8;
@@ -213,6 +214,7 @@ main #access .content .box-2 a {
   text-align: center;
   padding: 0.7rem;
 }
+main #access .content .box-2 button[type=submit]:hover,
 main #access .content .box-2 input[type=button]:hover,
 main #access .content .box-2 a:hover {
   opacity: 0.8;
@@ -369,7 +371,7 @@ main #access .content .box-2 a:hover {
   main #access .content .box-1 h2 {
     font-size: 2rem;
   }
-  main #access .content .box-2 input[type=button],
+  main #access .content .box-2 button[type=submit],
 main #access .content .box-2 input[type=email] {
     width: 100%;
     padding: 0.7rem 5rem 0.7rem 0.2rem;

@@ -212,11 +212,11 @@ main{
             border-radius: 3px;
             border: 0;
           }
+          button[type=submit],
           input[type=button],
           a{
             @include button();
             padding:0.7rem;
-           
           }
         }
       }
@@ -376,8 +376,7 @@ main{
           }
           text-align: center;
           &-2{
-          
-            input[type=button],
+            button[type=submit],
             input[type=email]{
               width:100%;
               padding:0.7rem 5rem 0.7rem 0.2rem;
@@ -412,6 +411,10 @@ main{
 @media(max-width:1200px){
     #navbar,
     .content{padding:10px;}
+
+    @mixin button {
+      padding: 0 1rem;
+    }
 }
 
 
