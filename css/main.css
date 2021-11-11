@@ -374,7 +374,6 @@ main #access .content .box-2 a:hover {
   main #access .content .box-2 button[type=submit],
 main #access .content .box-2 input[type=email] {
     width: 100%;
-    /*padding:0.7rem 5rem 0.7rem 0.2rem;*/
   }
 
   #footer .content {
